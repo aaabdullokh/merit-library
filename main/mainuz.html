@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="./logo.jpeg">
+    <title>Merit school library </title>
+</head>
+<style>
+    .preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #e0e0e0;
+    z-index: 1001;
+  }
+  
+  .preloader__row {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 70px;
+    height: 70px;
+    margin-top: -35px;
+    margin-left: -35px;
+    text-align: center;
+    animation: preloader-rotate 2s infinite linear;
+  }
+  
+  .preloader__item {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    background-color: black;
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+    animation: preloader-bounce 2s infinite ease-in-out;
+  }
+  
+  .preloader__item:last-child {
+    top: auto;
+    bottom: 0;
+    animation-delay: -1s;
+  }
+  
+  @keyframes preloader-rotate {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes preloader-bounce {
+  
+    0%,
+    100% {
+      transform: scale(0);
+    }
+  
+    50% {
+      transform: scale(1);
+    }
+  }
+  
+  .loaded_hiding .preloader {
+    transition: 0.3s opacity;
+    opacity: 0;
+  }
+  
+  .loaded .preloader {
+    display: none;
+  }
+  
+
+    .line1{
+        width: 100%;
+        height: 10px;
+        background-color: red;
+    }
+    .topbar{
+        display: flex;
+        justify-content: center;
+    }
+    #topbarlink{
+        margin-top: 5px;
+        text-decoration: none;
+        color: black;
+        transition: 0.1s;
+    }
+    #topbarlink:hover{
+        color: gray;
+    }
+    .uzbtn{
+        margin-top: 5px;
+        margin-left: 20px;
+    }
+    #uzbtn{
+        justify-content: center;
+        color: black;
+        font-size: 15px;
+        text-decoration: none;
+        transition: 0.1s;
+    }
+    #uzbtn:hover{
+        color: white;
+    }
+    .line2{
+        width: 100%;
+        height: 10px;
+        background-color: red;
+    }
+    .greet1{
+        font-weight: bolder;
+        margin-top: 50px;
+        text-align: center;
+    }
+    .greet2{
+        font-weight: 200;
+        margin-top: 30px;
+        text-align: center;
+    }
+    #liclass{
+        text-align: center;
+        font-size: 20px;
+        list-style-type: none;
+        text-decoration: none;
+        color: black;
+    }
+    #liclass:hover{
+        text-decoration: underline;
+    }
+
+</style>
+<body>
+    <div class="preloader">
+        <div class="preloader__row">
+          <div class="preloader__item"></div>
+          <div class="preloader__item"></div>
+        </div>
+    </div>
+    <div class="line1"></div>
+    <div class="topbar">
+        <ul class="nav">
+            <li class="nav-item">
+              <a id="topbarlink" class="nav-link" href="#">1 класс</a>
+            </li>
+            <li class="nav-item">
+              <a id="topbarlink" class="nav-link" href="#">2 класс</a>
+            </li>
+            <li class="nav-item">
+              <a id="topbarlink" class="nav-link" href="#">3 класс</a>
+            </li>
+            <li class="nav-item">
+              <a id="topbarlink" class="nav-link" href="#">4 класс</a> 
+            </li>
+              <li class="nav-item">
+                <a id="topbarlink" class="nav-link" href="#">5 класс</a>
+              </li>
+              <li class="nav-item">
+                <a id="topbarlink" class="nav-link" href="#">6 класс</a>
+              </li>
+              <li class="nav-item">
+                <a id="topbarlink" class="nav-link" href="#">7 класс</a>
+              </li>
+              <li class="nav-item">
+                <a id="topbarlink" class="nav-link" href="#">8 класс</a>
+              </li>
+              <li class="nav-item">
+                <a id="topbarlink" class="nav-link" href="#">9 класс</a>
+              </li>
+            <div class="uzbtn" id="uzbtn"><button class="btn btn-outline-dark" id="uzbtn"><a id="uzbtn" href="./mainuz.html">Men o'zbek sinfida o'qiyman</a></button></div>
+        </ul>
+        </div>
+    <div class="line2"></div>
+
+    <h1 class="greet1">
+        Приветствую!
+    </h1>
+
+    <h3 class="greet2">Bu bizning veb-saytimiz elektron uchun yaratilgan <br> Westmerit talabalari uchun kitob saqlash!</h3>
+    <h4 class="greet2">Пожалуйста выберите свой класс:</h4>
+    <ul>
+        <li id="liclass"><a id="liclass" href="">1 sinf</a></li>
+        <li id="liclass"><a id="liclass" href="">2 sinf</a></li>
+        <li id="liclass"><a id="liclass" href="">3 sinf</a></li>
+        <li id="liclass"><a id="liclass" href="">4 sinf</a></li>
+        <li id="liclass"><a id="liclass" href="">5 sinf</a></li>
+        <li id="liclass"><a id="liclass" href="">6 sinf</a></li>
+        <li id="liclass"><a id="liclass" href="">7 sinf</a></li>
+        <li id="liclass"><a id="liclass" href="">8 sinf</a></li>
+        <li id="liclass"><a id="liclass" href="">9 sinf</a></li>
+    </ul>
+
+</body>
+<script>
+    window.onload = function () {
+    document.body.classList.add('loaded');
+  }
+</script>
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</html>
