@@ -115,8 +115,18 @@
     }
     .greet1{
         font-weight: bolder;
-        margin-top: 50px;
+        margin-top: 30px;
         text-align: center;
+    }
+    .text1{
+        font-weight: 300;
+        margin-top: 35px;
+        text-align: center;
+    }
+    .line5{
+        width: 100%;
+        height: 10px;
+        background-color: red;
     }
     .greet2{
         font-weight: 200;
@@ -132,6 +142,14 @@
     }
     #liclass:hover{
         text-decoration: underline;
+    }
+    .text2{
+        font-weight: 300;
+        margin-top: 50px;
+        text-align: center;
+    }
+    footer{
+        margin-top: 50px;
     }
     .line3{
         width: 100%;
@@ -155,6 +173,15 @@
         width: 100%;
         height: 10px;
         background-color: darkblue;
+    }
+    .text3{
+        text-align: center;
+        font-weight: 100;
+    }
+    .text4{
+        text-decoration: none;
+        font-weight: 200;
+        color: blue;
     }
 </style>
 <body>
@@ -194,7 +221,7 @@
               <li class="nav-item">
                 <a id="topbarlink" class="nav-link" href="#">9 класс</a>
               </li>
-            <div class="uzbtn" id="uzbtn"><button class="btn btn-outline-dark" id="uzbtn"><a id="uzbtn" href="./mainuz.html">Men o'zbek sinfida o'qiyman</a></button></div>
+            <div class="uzbtn" id="uzbtn"><button class="btn btn-outline-dark" id="uzbtn"><a id="uzbtn" href="./mainuz.html">Men o'zbek sinfda o'qiyman</a></button></div>
         </ul>
         </div>
     <div class="line2"></div>
@@ -203,8 +230,14 @@
         Приветствую!
     </h1>
 
-    <h3 class="greet2">Это наш созданный сайт для электронного <br> хранения книг для учеников Westmerit!</h3>
-    <h4 class="greet2">Пожалуйста выберите свой класс:</h4>
+    <h4 class="text1">Этот Веб-сайт был создан в цели чтобы ученики не носили тяжёлые рюкзаки доьой! <br>
+       Наша цель обеспечить лучшую возможность для учеников и комфорт <br>
+    </h4>
+ 
+    <h3 class="greet2">Этот web-site создан для эллектронного хранения <br>
+        книг школы Westmerit.</h3><br>
+         <div class="line5"></div>
+    <h4 class="greet2">Пожалуйста выберите класс:</h4>
     <ul>
         <li id="liclass"><a id="liclass" href="">1 класс</a></li>
         <li id="liclass"><a id="liclass" href="">2 класс</a></li>
@@ -217,6 +250,10 @@
         <li id="liclass"><a id="liclass" href="">9 класс</a></li>
     </ul>
 
+    <h4 class="text2">
+        Если этот сайт помог вам, мы довольны!
+    </h4>
+
 </body>
 <footer>
     <div class="line3"></div>
@@ -224,11 +261,14 @@
         <ul class="nav">
             <li class="nav-item" id="lifooter"><a class="nav-link" href="">Контакты</a></li>
             <li class="nav-item" id="lifooter"><a class="nav-link" href="">Связь с нами</a></li>
-            <li class="nav-item" id="lifooter"><a class="nav-link" href="">Проблемы в сайте?</a></li>
+            <li class="nav-item" id="lifooter"><a class="nav-link" href="">Есть ошибки?</a></li>
             <li class="nav-item" id="lifooter"><a class="nav-link" href="">У меня есть совет</a></li>
         </ul>
     </div>
     <div class="line4"></div>
+    <p class="text3">2024&copy; | Правы защищены . merit School частная школа обслуживает. <br> 
+        Услуги сертифицированы , использав этот сайт вы соглашаетесь <a class="text4" href="ofertaru.html">с публичной офертой </a>
+    </p>
 </footer>
 <script>
     window.onload = function () {
